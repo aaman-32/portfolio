@@ -18,6 +18,7 @@
     justify-content: space-between;
     align-items: center;
     z-index: 10;
+    margin-bottom: 4em;
 }
 
 .top h2 {
@@ -37,7 +38,7 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin: 8em 0;
+    margin: 5em 0;
     gap: 1em;
     text-align: center;
 }
@@ -108,7 +109,6 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    gap: 2em;
 }
 
 .body .project {
@@ -122,6 +122,14 @@
     display: flex;
     flex-direction: column;
     gap: 1em;
+    margin: 1em 0;
+}
+
+.body .project:hover,
+.body .list .contact:hover,
+.body .list .skill:hover {
+    transform: scale(1.05);
+    cursor: pointer;
 }
 
 .body .project .frameworks {
@@ -138,7 +146,7 @@
 }
 
 .body .project img {
-    border: 1px solid;
+    border: 2px solid var(--background-color-ter);
     width: 100%;
     height: 30vh;
     border-radius: 20px;
@@ -157,16 +165,47 @@
 }
 
 .body .project .tags {
-    /*Make this break large flex to the next line rather than shrinking or overflowing*/
     display: flex;
     gap: 0.5em;
-    max-width: 100%;
-    overflow-x: scroll;
+    flex-wrap: wrap;
 }
 
 .body .project .tags .tag {
     background-color: var(--background-color-ter);
-    padding: 5px;
+    padding: 5px 10px;
+    border-radius: 100px;
+    font-weight: 500;
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+.body .project .urls {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.body .list .skill {
+    background-color: var(--color-ter);
+    padding: 1.5em;
+    width: 80%;
+    min-height: 2em;
+    border-radius: 20px;
+    margin: 1em 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.body .list .skill .frames {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.body .list .skill .frames .frame {
+    background-color: var(--background-color-ter);
+    padding: 5px 10px;
     border-radius: 100px;
     font-weight: 500;
     font-size: 0.7rem;
@@ -174,10 +213,35 @@
     flex-shrink: 0;
 }
 
-.tail {
-    text-align: center;
+.body .list .contact {
+    width: 80%;
+    min-height: 2em;
+    background-color: var(--background-color-sec);
+    border-radius: 60px;
+    margin: 0.5em 0;
+    padding: 0.8em;
     display: flex;
-    justify-content: flex-end;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    color: var(--color-white);
+}
+
+.body .list .contact svg {
+    width: 20px;
+    fill: var(--color-white);
+}
+
+.tail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.tail p {
+    display: flex;
+    text-align: center;
     align-items: center;
     font-size: 0.7rem;
     font-weight: 600;
