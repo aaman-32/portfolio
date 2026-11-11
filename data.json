@@ -1,0 +1,332 @@
+{
+    "contacts": {
+        "name": "Umar Aman",
+        "intro": "Coding like it were a form of art",
+        "bio": "Hi, I'm <name>! A solo Full-Stack Engineer & UI/UX Designer dedicated to building thoughtful, high-performance web applications and responsive API endpoints.",
+        "phone": "2347039991191",
+        "email": "amanumar2006@gmail.com",
+        "whatsapp": "2347069991191",
+        "github": "https://github.com/aaman-32",
+        "x": "",
+        "linkedin": "",
+        "company": {
+            "name": "Halo Studios",
+            "url": "https://halostudios.xyz"
+        }
+    },
+    "projects": [
+        {
+            "name": "AFIT Wayfinder",
+            "frameworks": [
+                3,
+                1,
+                4,
+                5,
+                9
+            ],
+            "type": [
+                1,
+                2
+            ],
+            "tags": [
+                "React",
+                "Web App"
+            ],
+            "description": "A high-detail 3D view of the Air Force Institute of Technology with building and road metadata, advanced location routing and in-built weather tracking",
+            "repo": "https://github.com/aaman-32/afit-wayfinder.git",
+            "url": "",
+            "isClient": true
+        },
+        {
+            "name": "Student Toolbox",
+            "frameworks": [
+                6
+            ],
+            "type": [
+                2
+            ],
+            "tags": [
+                "Flutter",
+                "Android"
+            ],
+            "description": "An all in one student companion app written in flutter that boasts a rage of features from PDF & document readers, scanners & convertors, to advanced scientific calculators and study plan reminders",
+            "repo": "",
+            "url": "",
+            "isClient": false
+        },
+        {
+            "name": "Talkback",
+            "frameworks": [
+                2,
+                8
+            ],
+            "type": [
+                5,
+                4
+            ],
+            "tags": [
+                "AI Models",
+                "Python",
+                "API"
+            ],
+            "description": "A powerful, high-speed text generation and AI chat API endpoint with a multitude of pertained AI models raging from open-source llama models, to self-trained character based AI models",
+            "repo": "",
+            "url": "",
+            "isClient": false
+        },
+        {
+            "name": "Anon",
+            "frameworks": [
+                1
+            ],
+            "type": [
+                5,
+                6
+            ],
+            "tags": [
+                "Bot",
+                "Node.js",
+                "Backend"
+            ],
+            "description": "A high speed, high efficiency, self-host Baileys WhatsApp bot with features including media processing tools with Ffmpeg, API data queries and responses, misc and causal games and much more",
+            "repo": "https://github.com/aaman-32/anon.git",
+            "url": "cyan.<halo-studios>/bots/anon",
+            "isClient": false
+        },
+        {
+            "name": "Reflection",
+            "frameworks": [
+                1
+            ],
+            "type": [
+                4,
+                5
+            ],
+            "tags": [
+                "Express.js",
+                "JavaScript",
+                "API"
+            ],
+            "description": "An open-source Express.js API for searching media metadata, processing audio/video downloads, and uploading images",
+            "repo": "https://github.com/aaman-32/reflection.git",
+            "url": "",
+            "isClient": false
+        },
+        {
+            "name": "CWACS",
+            "frameworks": [
+                6,
+                2,
+                9
+            ],
+            "type": [
+                1,
+                2,
+                4
+            ],
+            "tags": [
+                "API",
+                "Flutter",
+                "Android"
+            ],
+            "description": "Cloudy with a Chance of Snowball - Your trusted weather agent",
+            "repo": "https://github.com/aaman-32/cwacs.git",
+            "url": "",
+            "isClient": false
+        },
+        {
+            "name": "Bizcure",
+            "frameworks": [
+                3,
+                1,
+                4,
+                5,
+                9
+            ],
+            "type": [
+                1,
+                2
+            ],
+            "tags": [
+                "React",
+                "Web App"
+            ],
+            "description": "A social media platform made for sharing bizarre and obscure thoughts, written in Vite React and integrated with Capacitor to serve a multitude of user platforms, ranging from web to android and ios",
+            "repo": "",
+            "url": "bizcure.<halo-studios>",
+            "isClient": false
+        },
+        {
+            "name": "Soteria+",
+            "frameworks": [
+                3,
+                1,
+                4,
+                5,
+                9
+            ],
+            "type": [
+                1,
+                2
+            ],
+            "tags": [
+                "React",
+                "Android"
+            ],
+            "description": "Learn about keeping fit and health, connect with verified medical practitioners and stay on top of your health with our health based social media platform: Soteria+",
+            "repo": "",
+            "url": "soteria.<halo-studios>",
+            "isClient": true
+        },
+        {
+            "name": "Orbit AI",
+            "frameworks": [
+                3,
+                1,
+                2,
+                4,
+                5,
+                8,
+                9
+            ],
+            "type": [
+                1,
+                2
+            ],
+            "tags": [
+                "AI",
+                "Backend",
+                "Frontend",
+                "Fullstack"
+            ],
+            "description": "Meet Orbit AI - The model of the future",
+            "repo": "",
+            "url": "",
+            "isClient": false
+        },
+        {
+            "name": "Cyan Prime",
+            "frameworks": [
+                1
+            ],
+            "type": [
+                4,
+                5,
+                6
+            ],
+            "tags": [
+                "Bot",
+                "Node.js",
+                "Backend"
+            ],
+            "description": "A super fast, super efficient group management baileys WhatsApp bot with a magnitude of tools",
+            "repo": "",
+            "url": "",
+            "isClient": false
+        },
+        {
+            "name": "Anita",
+            "frameworks": [
+                1
+            ],
+            "type": [
+                1,
+                4,
+                5,
+                6
+            ],
+            "tags": [
+                "Bot",
+                "Node.js",
+                "Backend"
+            ],
+            "description": "A well coded, multi-instance baileys WhatsApp bot with advanced CPU scaling",
+            "repo": "",
+            "url": "",
+            "isClient": false
+        },
+        {
+            "name": "Halo Studios",
+            "frameworks": [
+                3,
+                1,
+                4,
+                5
+            ],
+            "type": [
+                1
+            ],
+            "tags": [
+                "React",
+                "Web"
+            ],
+            "description": "The official Halo Studios webpage",
+            "repo": "",
+            "url": "<halo-studios>",
+            "isClient": false
+        },
+        {
+            "name": "Cyan+",
+            "frameworks": [
+                3,
+                1,
+                4,
+                5
+            ],
+            "type": [
+                1
+            ],
+            "tags": [
+                "React",
+                "Web"
+            ],
+            "description": "The official Cyan+ webpage",
+            "repo": "",
+            "url": "cyan.<halo-studios>",
+            "isClient": false
+        },
+        {
+            "name": "Get Waifu!",
+            "frameworks": [
+                3,
+                7,
+                4,
+                5
+            ],
+            "type": [
+                1,
+                2,
+                4
+            ],
+            "tags": [
+                "React",
+                "Web App",
+                "API",
+                "Database"
+            ],
+            "description": "Get your favourite anime waifu pics from a catalogue of 4000+ high quality images",
+            "repo": "https://github.com/aaman-32/get-waifu.git",
+            "url": "",
+            "isClient": false
+        }
+    ],
+    "framework_map": {
+        "1": "js",
+        "2": "py",
+        "3": "jsx",
+        "4": "html",
+        "5": "css",
+        "6": "dart",
+        "7": "ts",
+        "8": "bash",
+        "9": "sql"
+    },
+    "type_map": {
+        "1": "Web App",
+        "2": "Android",
+        "3": "iOS",
+        "4": "API",
+        "5": "Runtime",
+        "6": "Bot"
+    }
+}

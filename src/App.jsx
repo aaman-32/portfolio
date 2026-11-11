@@ -1,122 +1,41 @@
-import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import './App.css'
+import { useRef, useState } from 'react';
+import data from '../data.json';
+import Stars from './components/Stars';
+import { SVG } from './components/SVG';
+import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [menu, setMenu] = useState(false);
+  const [view_more, set_view_more] = useState(false);
+  const refs = useRef({});
 
-  return (
-    <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
-
-      <div className="ticks"></div>
-
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
-  )
+  return (<div id="App">
+    <Stars count={200} />
+    <div className="top">
+      <h2>{data.contacts.name}</h2>
+      <div className="button"> <SVG name={menu ? 'x' : 'menu'} /> </div>
+    </div>
+    <div className="head">
+      <h1>{data.contacts.intro}.</h1>
+      <p>{data.contacts.bio.replace('<name>', data.contacts.name.split(' ')[1])}</p>
+      <button className='main' onClick={() => window.scrollTo({ x: refs.projects })}>View Projects</button>
+      <button className='other'>Contact Me</button>
+      <span>
+        <div onClick={() => window.location.href = data.contacts.github} className="button"><SVG name='github' /></div>
+        <div onClick={() => window.location.href = data.contacts.linkedin} className="button"><SVG name='linkedin' /></div>
+        <div onClick={() => window.location.href = data.contacts.x} className="button"><SVG name='twitter' /></div>
+        <div onClick={() => window.location.href = data.contacts.email} className="button"><SVG name='email' /></div>
+      </span>
+    </div>
+    <div className="body">
+      <h1 ref={(e) => ({ ...refs, projects: e })}>Projects</h1>
+      <h4>A curated selection of recent projects showcasing web apps, media & AI APIs, android apps and WhatsApp bots.</h4>
+      <div className="list">
+        {data.projects.map(project => <div className='project' key={Math.random()}><div className="frameworks">{project.frameworks.map(f => <img src={`/svgs/${data.framework_map[f]}.svg`} />)}</div><img src={`/images/${project.name.toLowerCase().replace(' ', '_')}.jpg`} alt={project.name} /><b>{project.name}</b><p>{project.description}.</p><div className="tags">{project.tags.map(t => <div className='tag'>{t}</div>)}</div></div>)}
+      </div>
+    </div>
+    <div className="tail">Made with <img src='/svgs/jsx.svg' /></div>
+  </div>)
 }
 
 export default App
